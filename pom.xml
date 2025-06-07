@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>br.com.minhalocadora</groupId>
+    <artifactId>OtimizaFrota</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>OtimizaFrota</name>
+    <description>Projeto Java para otimização de frota usando Apache Commons Math</description>
+
+    <properties>
+      <!-- Força compilação em UTF-8 para evitar “unmappable character” -->
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <maven.compiler.source>11</maven.compiler.source>
+      <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+      <!-- Commons Math 3.6.1, que tem o SimplexSolver e as classes de otimização -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-math3</artifactId>
+        <version>3.6.1</version>
+      </dependency>
+    </dependencies>
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <mainClass>br.com.minhalocadora.lp.OtimizaFrotaCommonsMath</mainClass>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+</project>
