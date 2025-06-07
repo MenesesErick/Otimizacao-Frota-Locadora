@@ -14,7 +14,6 @@ Este projeto foi desenvolvido como trabalho acadêmico para a disciplina de **Ot
 * [Começando](#-começando)
 * [Resultados](#-resultados)
 * [Autores](#️-autores)
-* [Licença](#-licença)
 
 ## 📜 Sobre o Projeto
 
